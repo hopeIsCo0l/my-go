@@ -10,6 +10,11 @@ import (
 // the <icon src="AllIcons.Actions.Execute"/> icon in the gutter and select the <b>Run</b> menu item from here.</p>
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Go on Localhost")
+
+	for i := 10; i > 0; i-- {
+		fmt.Fprint(w, "eye is: ", i)
+	}
+
 }
 
 func main() {
@@ -30,8 +35,7 @@ func main() {
 	fmt.Printf("Hello and welcome, %s!\n", s)
 
 	for i := 1; i <= 5; i++ {
-		//TIP <p>To start your debugging session, right-click your code in the editor and select the Debug option.</p> <p>We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-		// for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.</p>
 		fmt.Println("i =", 100/i)
 	}
+
 }
