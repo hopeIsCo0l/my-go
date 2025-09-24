@@ -12,7 +12,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Go on Localhost")
 
 	for i := 10; i > 0; i-- {
-		fmt.Fprint(w, "eye is: ", i)
+		fmt.Fprintf(w, "eye is: ", i)
 	}
 
 }
